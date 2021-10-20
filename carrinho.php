@@ -48,7 +48,7 @@
             $consulta = $pdo->query("SELECT * FROM carro 
                                      WHERE valor <= '$procurar' 
                                      ORDER BY valor");}
-			elseif($consultavel == "km"){ 
+			else { 
 				echo $consultavel;
 				$pdo = Conexao::getInstance();
             $consulta = $pdo->query("SELECT * FROM carro 
