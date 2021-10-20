@@ -18,7 +18,6 @@
 		<input type="radio" name="consultavel" id="consultavel" value="nome" <?php if($consultavel == "nome")echo "checked"; ?>>nome 
 		<input type="radio" name="consultavel" id="consultavel" value="valor" <?php if($consultavel == "valor") echo "checked"; ?>>valor 
 		<input type="radio" name="consultavel" id="consultavel" value="km" <?php if($consultavel == "km") echo "checked"; ?>>km 	
-		<input type="submit">
 		</fieldset>
     <fieldset>
         <legend>Procurar carros</legend>
