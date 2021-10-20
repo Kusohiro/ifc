@@ -37,19 +37,16 @@
 		</tr>
         <?php
 			if($consultavel == "nome"){ 
-				echo $consultavel;
 				$pdo = Conexao::getInstance();
             $consulta = $pdo->query("SELECT * FROM carro 
                                      WHERE nome LIKE '$procurar%' 
                                      ORDER BY nome");}
 			if($consultavel == "valor"){ 
-				echo $consultavel;
 				$pdo = Conexao::getInstance();
             $consulta = $pdo->query("SELECT * FROM carro 
                                      WHERE valor <= '$procurar' 
                                      ORDER BY valor");}
 			else { 
-				echo $consultavel;
 				$pdo = Conexao::getInstance();
             $consulta = $pdo->query("SELECT * FROM carro 
                                      WHERE km <= '$procurar' 
