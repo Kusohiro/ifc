@@ -47,13 +47,13 @@
 				echo $consultavel;
 				$pdo = Conexao::getInstance();
             $consulta = $pdo->query("SELECT * FROM carro 
-                                     WHERE valor LIKE '$procurar%' 
+                                     WHERE valor <= '$procurar' 
                                      ORDER BY valor");}
 			elseif($consultavel == "km"){ 
 				echo $consultavel;
 				$pdo = Conexao::getInstance();
             $consulta = $pdo->query("SELECT * FROM carro 
-                                     WHERE km LIKE '$procurar%' 
+                                     WHERE km <= '$procurar' 
                                      ORDER BY km");}
             while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) { 
 				
